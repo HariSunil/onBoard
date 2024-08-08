@@ -1041,6 +1041,9 @@ a{
     .cta_image img{
         height:420px;
     }
+    .pic img{
+        left:-25%;
+    }
 }
 @media (min-width:1451px) and (max-width:2560px){
     .sub-container{
