@@ -871,11 +871,8 @@ a{
     font-family: 'regular';
 }
 @media (min-width:320px) and (max-width:480px){
-
-}
-@media (min-width:481px) and (max-width:729px){
     .page1{
-        height:980px;
+        height:1080px;
     }
     .collab{
         display:none;
@@ -886,37 +883,44 @@ a{
     .links{
         display:none;
     }
+    .content h1{
+        font-size: 28px;
+    }
+    .para1 p{
+        font-size: 10px;
+    }
     .picture img{
-        width:450px;
+        width:300px;
         height:420px;
         position: relative;
-        top:350px;
-        right:200px;
+        top:300px;
+        right:30px;
     }
     .content2{
         display: block;
     }
     .pic img{
-        margin-inline: 120px;
+        margin-inline: 40px;
+        width:340px;
+    }
+    .marking p{
+        font-size: 12px;
+    }
+    .marking{
+        margin-bottom: 60px;
     }
     .pic1 img{
-        top:44%;
+        top:58%;
         left:5%;
+        width:320px;
     }
     .pic2 img{
-        top:43%;
-        left:-5%;
+        top:58%;
+        left:-30%;
     }
     .content4{
-        margin-top: 100px;  
-        margin-inline: 50px;
-    }
-    .cta-image{
-        display: none;
-    }
-    .cta-image img{
-        width:70%;
-        height:300px;
+        margin-top: 300px;  
+        margin-inline: -10px;
     }
     .cta_component{
         display: inline-block;
@@ -927,6 +931,127 @@ a{
     .last-link{
         margin-left: 300px;
     }
+    .ser-slide{
+        display:block;
+    }
+    .service-slide-img img{
+        height:300px;
+    }
+    .s-slider{
+        padding: 24px 36px;
+    }
+    .cta_image img{
+        height:360px;
+   }
+   .cta_content{
+    padding: 60px 30px;
+   }
+   .footer_logo{
+    grid-column-start: 1;
+    grid-row-start: 1;  
+    grid-row-end: 2;
+    justify-self: start;
+    top:0;
+    left:-10px;
+}
+.footer_middle{
+    grid-row-gap:24px;
+    grid-template-columns: 1fr;
+}
+#follow{
+    margin-left: 10px;
+}
+
+}
+@media (min-width:481px) and (max-width:729px){
+    .page1{
+        height:1080px;
+    }
+    .collab{
+        display:none;
+    }
+    .header{
+        border-bottom: none;
+    }
+    .links{
+        display:none;
+    }
+    .content h1{
+        font-size: 48px;
+    }
+    .para1 p{
+        font-size: 13px;
+    }
+    .picture img{
+        width:450px;
+        height:420px;
+        position: relative;
+        top:300px;
+        right:90px;
+    }
+    .content2{
+        display: block;
+    }
+    .pic img{
+        margin-inline: 120px;
+    }
+    .marking p{
+        font-size: 12px;
+    }
+    .marking{
+        margin-bottom: 60px;
+    }
+    .pic1 img{
+        top:44%;
+        left:5%;
+    }
+    .pic2 img{
+        top:43%;
+        left:-5%;
+    }
+    .content4{
+        margin-top: 300px;  
+        margin-inline: -10px;
+    }
+    .cta_component{
+        display: inline-block;
+    }
+    .cta{
+        margin-left: -20px;
+    }
+    .last-link{
+        margin-left: 300px;
+    }
+    .ser-slide{
+        display:block;
+    }
+    .service-slide-img img{
+        height:300px;
+    }
+    .s-slider{
+        padding: 24px 36px;
+    }
+    .cta_image img{
+        height:360px;
+   }
+   .cta_content{
+    padding: 60px 30px;
+   }
+   .footer_logo{
+    grid-column-start: 1;
+    grid-row-start: 1;  
+    grid-row-end: 2;
+    justify-self: start;
+    top:0;
+    left:-10px;
+}
+.footer_middle{
+    grid-row-gap:24px;
+    grid-template-columns: 1fr;
+}
+#follow{
+    margin-left: 10px;
+}
 }
 @media (min-width:730px) and (max-width:990px){
     .picture img{
@@ -955,7 +1080,7 @@ a{
         left:34%;
     }
     .content4{
-        padding-top: 370px;
+      padding-top: 640px;
     }
     .cta_component{
         display: inline-block;
@@ -975,6 +1100,20 @@ a{
     #follow{
         margin-left: 10px;
     } 
+    .ser-slide{
+        display:block;
+    }
+    .s-slider{
+        padding: 24px 30px;
+    }
+    .cta_image img{
+        width:100%; 
+        height:260px;
+        object-fit: cover;
+   }
+   .cta_content{
+    padding: 60px 30px;
+   }
 }
 @media (min-width:991px) and (max-width:1024px){
     .picture img{
