@@ -19,6 +19,9 @@
     font-family: 'semibold';
     src:url(./fonts/Poppins-SemiBold.ttf);
 }
+.container{
+    overflow: hidden;
+}
 /* Page1 */
 .page1{
     background-color: #162143;
@@ -389,7 +392,7 @@
 .content4{
     padding-left: 36px;
     padding-right: 36px;
-    padding-top: 250px;
+    margin-top: 400px;
 }
 .partner-page p{
     font-size: 16px;
@@ -406,6 +409,16 @@
     vertical-align: middle;
     display:inline-block;
     max-width: 100%;
+}
+.logo1 img{
+    width:160px;
+    height: 70px;
+}
+.logo5{
+    margin-left: 20px;
+}
+.logo5 img{
+    width:120px;
 }
 .logo-grid{
     display:grid;
@@ -871,7 +884,11 @@ a{
     font-family: 'regular';
 }
 @media (min-width:320px) and (max-width:480px){
+    .container{
+        width:100%;
+    }
     .page1{
+        width:430px;
         height:1080px;
     }
     .collab{
@@ -960,6 +977,9 @@ a{
 }
 #follow{
     margin-left: 10px;
+}
+.head img{
+    margin-inline: 30px;
 }
 
 }
