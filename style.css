@@ -882,6 +882,10 @@ a{
     font-size: 12px;
     font-family: 'regular';
 }
+.w-inline-block{
+    max-width: 100%;
+    display: inline-block;
+}
 @media (min-width:320px) and (max-width:480px){
     .container{
         width:100%;
@@ -891,7 +895,7 @@ a{
     }
     .page1{
         width:430px;
-        height:900px;
+        height:980px;
     }
     .collab{
         display:none;
@@ -899,31 +903,36 @@ a{
     .header{
         border-bottom: none;
     }
+    .collab1{
+        margin-left: 20px;
+    }
     .links{
         display:none;
     }
     .content h1{
-        font-size: 28px;
+        font-size: 38px;
+        margin-left: 20px;
     }
     .para1 p{
-        font-size: 9px;
+        font-size: 16px;
+        margin-left: 20px;
     }
     .picture img{
-        width:300px;
-        height:420px;
+        width:270px;
+        height:350px;
         position: relative;
-        top:300px;
-        right:20px;
+        top:400px;
+        right:80px;
     }
     .content2{
         display: block;
     }
     .pic img{
-        margin-left: 30px;
+        margin-left: 60px;
         width:270px;
     }
     .marking p{
-        font-size: 8px;
+        font-size: 10px;
     }
     .marking{
         margin-bottom: 60px;
@@ -932,13 +941,13 @@ a{
         font-size: 28px;
     }
     .pic1 img{
-        top:46%;
-        left:-20%;
+        top:38%;
+        left:-5%;
         width:300px;
     }
     .pic2 img{
-        top:46%;
-        left:-34%;
+        top:38%;
+        left:-25%;
     }
     .content4{
         margin-top: 300px;  
@@ -948,7 +957,10 @@ a{
         display: inline-block;
     }
     .cta{
-        margin-left: -20px;
+        margin-left: -40px;
+    }
+    .cta_image{
+        height:100px;
     }
     .last-link{
         margin-left: 300px;
@@ -965,10 +977,14 @@ a{
          margin-left:-15px;
     }
     .cta_image img{
-        height:300px;
+        height:250px;
+        width:400px;
+        margin-inline:5px;
    }
    .cta_content{
-    padding: 60px 30px;
+    padding: 20px 5px;
+    margin-inline: 5px;
+    width:400px;
    }
    .footer_logo{
     grid-column-start: 1;
@@ -979,14 +995,24 @@ a{
     left:-10px;
 }
 .footer_middle{
-    grid-row-gap:24px;
+    grid-row-gap:20px;
     grid-template-columns: 1fr;
+}
+.link.large-text{
+    font-size: 28px;
+}
+.footer_privacy{
+    flex-direction: column;
+    align-items: flex-start;
 }
 #follow{
     margin-left: 10px;
 }
 .head img{
-    margin-inline: -10px;
+    margin-left: 20px;
+}
+.link{
+    display: flex;
 }
 .service-slide-img img{
     width:220px;
@@ -1026,10 +1052,6 @@ a{
 .imgp3{
     display: none;
 }
-.cta_content,.join-box{
-    padding-right: 20px;
-    padding-left: 20px;
-}
 .join-box{
     left:-20px;
     width:400px;
@@ -1045,6 +1067,31 @@ a{
 #symbol2{
     left:-60px;
     top:50px;
+}
+.footer_links-c{
+     display: block;
+     margin-bottom: 70px;
+}
+.nav_link.iss-footer{
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 24px;
+    padding-left: 0;
+    text-align: left;
+}
+.footer_bottom{
+    grid-template-columns: 2fr;
+}
+.text-size-tiny{
+    margin-bottom: 10px;
+}
+.last-link a{
+    margin-left: -300px;
+}
+.footer_privacy-links{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:-2px;
 }
 }
 @media (min-width:481px) and (max-width:729px){
@@ -1098,10 +1145,10 @@ a{
         margin-inline: -10px;
     }
     .cta_component{
-        display: inline-block;
+        grid-template-columns:1fr;
     }
-    .cta{
-        margin-left: -20px;
+    .page-padding{
+        margin-inline: 40px;
     }
     .last-link{
         margin-left: 300px;
@@ -1170,7 +1217,8 @@ a{
       padding-top: 640px;
     }
     .cta_component{
-        display: inline-block;
+        /* display: inline-block; */
+        grid-template-columns:1fr;
     }
     .footer_logo{
         grid-column-start: 1;
@@ -1200,6 +1248,10 @@ a{
    }
    .cta_content{
     padding: 60px 30px;
+   }
+   .page-padding{
+    padding-right: 20px;
+    padding-left: 20px;
    }
 }
 @media (min-width:991px) and (max-width:1024px){
